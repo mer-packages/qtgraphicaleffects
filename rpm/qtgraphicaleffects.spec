@@ -30,6 +30,8 @@ This package contains the Qt Graphical Effect library
 
 %build
 export QTDIR=/usr/share/qt5
+touch .git # To make sure syncqt is used
+
 %qmake5 CONFIG+=package
 make %{?_smp_flags}
 
