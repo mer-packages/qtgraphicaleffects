@@ -33,7 +33,7 @@ export QTDIR=/usr/share/qt5
 touch .git # To make sure syncqt is used
 
 %qmake5 CONFIG+=package
-make %{?_smp_flags}
+make %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}
